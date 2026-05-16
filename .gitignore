@@ -1,0 +1,83 @@
+# ── Environment variables (NEVER commit this) ────────────
+.env
+
+# ── Python ───────────────────────────────────────────────
+__pycache__/
+*.py[cod]
+*$py.class
+*.pyc
+*.pyo
+*.pyd
+.Python
+*.egg
+*.egg-info/
+dist/
+build/
+eggs/
+parts/
+var/
+sdist/
+develop-eggs/
+.installed.cfg
+lib/
+lib64/
+
+# ── Virtual environments ──────────────────────────────────
+venv/
+.venv/
+env/
+.env/
+ENV/
+myenv/
+
+# ── ML Models (large files — don't push to GitHub) ───────
+models/*.pkl
+models/*.joblib
+models/*.h5
+models/*.pt
+models/*.pth
+
+# ── Jupyter Notebook ──────────────────────────────────────
+.ipynb_checkpoints/
+*.ipynb_checkpoints
+
+# ── Dataset (too large for GitHub) ───────────────────────
+notebook/data/
+notebooks/data/
+*.csv
+*.parquet
+*.feather
+
+# ── Log files ─────────────────────────────────────────────
+logs/live_access.log
+logs/*.log
+
+# ── Database ──────────────────────────────────────────────
+*.db
+*.sqlite
+*.sqlite3
+
+# ── IDE ───────────────────────────────────────────────────
+.vscode/
+.idea/
+*.swp
+*.swo
+.qodo/
+
+# ── OS ────────────────────────────────────────────────────
+.DS_Store
+.DS_Store?
+._*
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# ── Docker ────────────────────────────────────────────────
+.dockerignore
+
+# ── Output charts (optional — remove if you want to keep) ─
+notebook/outputs/
+notebooks/outputs/
+
+# ── Streamlit ─────────────────────────────────────────────
+.streamlit/secrets.toml
