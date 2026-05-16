@@ -13,29 +13,16 @@ __pycache__/
 *.egg-info/
 dist/
 build/
-eggs/
-parts/
-var/
-sdist/
-develop-eggs/
-.installed.cfg
-lib/
-lib64/
 
 # ── Virtual environments ──────────────────────────────────
 venv/
 .venv/
 env/
-.env/
 ENV/
 myenv/
 
-# ── ML Models (large files — don't push to GitHub) ───────
-models/*.pkl
-models/*.joblib
-models/*.h5
-models/*.pt
-models/*.pth
+# ── ML Models — KEEP .pkl files for Docker ───────────────
+# models/*.pkl   ← removed so Docker can copy them
 
 # ── Jupyter Notebook ──────────────────────────────────────
 .ipynb_checkpoints/
@@ -44,13 +31,9 @@ models/*.pth
 # ── Dataset (too large for GitHub) ───────────────────────
 notebook/data/
 notebooks/data/
-*.csv
-*.parquet
-*.feather
 
 # ── Log files ─────────────────────────────────────────────
 logs/live_access.log
-logs/*.log
 
 # ── Database ──────────────────────────────────────────────
 *.db
@@ -66,18 +49,11 @@ logs/*.log
 
 # ── OS ────────────────────────────────────────────────────
 .DS_Store
-.DS_Store?
-._*
 Thumbs.db
-ehthumbs.db
 Desktop.ini
-
-# ── Docker ────────────────────────────────────────────────
-.dockerignore
-
-# ── Output charts (optional — remove if you want to keep) ─
-notebook/outputs/
-notebooks/outputs/
 
 # ── Streamlit ─────────────────────────────────────────────
 .streamlit/secrets.toml
+
+# ── Notebook outputs ──────────────────────────────────────
+notebook/outputs/
