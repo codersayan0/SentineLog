@@ -21,19 +21,12 @@ env/
 ENV/
 myenv/
 
-# ── ML Models — KEEP .pkl files for Docker ───────────────
-# models/*.pkl   ← removed so Docker can copy them
-
 # ── Jupyter Notebook ──────────────────────────────────────
 .ipynb_checkpoints/
 *.ipynb_checkpoints
 
 # ── Dataset (too large for GitHub) ───────────────────────
 notebook/data/
-notebooks/data/
-
-# ── Log files ─────────────────────────────────────────────
-logs/live_access.log
 
 # ── Database ──────────────────────────────────────────────
 *.db
@@ -55,5 +48,3 @@ Desktop.ini
 # ── Streamlit ─────────────────────────────────────────────
 .streamlit/secrets.toml
 
-# ── Notebook outputs ──────────────────────────────────────
-notebook/outputs/
